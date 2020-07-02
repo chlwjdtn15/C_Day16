@@ -1,7 +1,7 @@
 // 문제 : 구조체 변수에 원본이 들어있는지 참조(주소)가 들어있는지 확인해주세요.
 
 #include <stdio.h>
-
+#include <stdlib.h>
 // struct School {
 
 
