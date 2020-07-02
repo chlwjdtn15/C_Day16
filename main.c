@@ -2,22 +2,22 @@
 
 #include <stdio.h>
 
-struct School {
+// struct School {
 
 
-  char* name;
-  int birth_date;
-};
+//   char* name;
+//   int birth_date;
+// };
 
-void change(struct School* str) {
-
-
-
-  str -> name = "미국초등학교";
-  str -> birth_date = 20180717;
+// void change(struct School* str) {
 
 
-}
+
+//   str -> name = "미국초등학교";
+//   str -> birth_date = 20180717;
+
+
+// }
 
 
 // struct Person {
@@ -27,6 +27,16 @@ void change(struct School* str) {
 
 // };
 
+int* makeArr() {
+
+  int arr[3];
+    
+  arr[0] = 100; 
+  arr[1] = 200; 
+  arr[2] = 300; 
+
+  return arr;
+}
 
 int main(void) {
 
@@ -52,23 +62,27 @@ int main(void) {
 // 조건 : 아래와 같이 출력하게 해주세요.
 
 
-  struct School s1;
-  s1.name = "한국초등학교";
-  s1.birth_date = 19860404;
+  // struct School s1;
+  // s1.name = "한국초등학교";
+  // s1.birth_date = 19860404;
 
-  printf("학교의 이름 : %s\n", s1.name);
-  // 출력 => 학교의 이름 : 한국초등학교
-  printf("학교의 설립일 : %d\n", s1.birth_date);
-  // 출력 => 학교의 설립일 : 19860404
+  // printf("학교의 이름 : %s\n", s1.name);
+  // // 출력 => 학교의 이름 : 한국초등학교
+  // printf("학교의 설립일 : %d\n", s1.birth_date);
+  // // 출력 => 학교의 설립일 : 19860404
 
-  change(&s1);
+  // change(&s1);
 
-  printf("학교의 이름 : %s\n", s1.name);
-  // 출력 => 학교의 이름 : 미국초등학교
-  printf("학교의 설립일 : %d\n", s1.birth_date);
-  // 출력 => 학교의 설립일 : 20180717
+  // printf("학교의 이름 : %s\n", s1.name);
+  // // 출력 => 학교의 이름 : 미국초등학교
+  // printf("학교의 설립일 : %d\n", s1.birth_date);
+  // // 출력 => 학교의 설립일 : 20180717
 
 
+  int* arr = makeArr();
+  printf("arr[0] : %d\n", arr[0]);
+  printf("arr[1] : %d\n", arr[1]);
+  printf("arr[2] : %d\n", arr[2]);
 
 
 
